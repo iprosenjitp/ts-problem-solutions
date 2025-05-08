@@ -2,11 +2,11 @@
 
 ## Question - 4: What is the use of enums in TypeScript? Provide an example of a numeric and string enum.
 
-### Answer
+### Answer:
 Enums let you define a group of named values that you can use in your code. Instead of using plain numbers or strings, you give those values meaningful names. This makes your code easier to understand and manage. An enum can be defined using the `enum` keyword.
 
-**Numeric Enum**
-By default, enums will initialize the first value to `0` and add `1` to each additional value. But if we set the value of the first numeric enum, the rest will auto-increment from that. And we also can assign unique number values for each enum value. Then the values will not incremented automatically.
+**Numeric Enum**\
+By default, enums will initialize the first value to `0` and add `1` to each additional value. But if we set the value of the first numeric enum, the rest will auto-increment from that. And we can also assign unique number values for each enum value. Then the values will not be incremented automatically.
 
 ```typescript
 enum MonthDays2025 {
@@ -28,7 +28,7 @@ let mayDaysCount = MonthDays2025.May;
 console.log(mayDaysCount); // 31
 ```
 
-**String Enum**
+**String Enum**\
 In a string enum, each member has to be constant-initialized with a string literal, or with another string enum member.
 
 ```typescript
@@ -44,10 +44,10 @@ console.log(currBatch); // Batch - 05
 
 ## Question - 6: How does TypeScript help in improving code quality and project maintainability?
 
-### Answer
+### Answer:
 TypeScript improves code quality and project maintainability in several key ways:
 
-**1. Static Typing**
+**1. Static Typing**\
 TypeScript lets you define types for variables, function parameters, return values, and more. This helps catch type-related errors at compile time, not at runtime.
 
 ```typescript
@@ -60,14 +60,14 @@ function add(num1: number, num2: number): number {
 
 ```
 
-**2. Support for Modern JavaScript Features**
+**2. Support for Modern JavaScript Features**\
 TypeScript supports all modern JavaScript (ES6+) features and compiles them down to older versions if needed for compatibility.
 
-**3. Improved Readability and Self-Documentation**
+**3. Improved Readability and Self-Documentation**\
 Types act as documentation. When someone reads your code, they can immediately understand what kind of data is expected or returned.
 
-**4. Early Bug Detection and Improved Performance**
+**4. Early Bug Detection and Improved Performance**\
 TypeScript’s static typing plays a key role in boosting code quality by identifying errors early in the development process. By checking types at compile time, it helps catch issues before the code runs, reducing the chances of runtime bugs and unpredictable behavior. This proactive error detection streamlines debugging, saves development time, and leads to more robust and dependable applications.
 
-**4. Strong Community and Expanding Ecosystem**
+**5. Strong Community and Expanding Ecosystem**\
 TypeScript is backed by an active and expanding community. Major frameworks like React, Angular, and Vue offer robust TypeScript integration. With plenty of tools, guides, and learning resources available, it’s easier than ever for developers to get started and smoothly incorporate TypeScript into their projects.
